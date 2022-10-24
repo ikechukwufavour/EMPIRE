@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rate.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/af66f07ccd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+    <div class="pas" >
+    <img src="./b-svg/3.svg" style="padding-bottom: 10px;
+        height:80px;
+        width:150px;
+        margin-left: 15px;"/>
+       <div class="ki"><div class="lo"> <p>Jimmy Davies</p></div>
+       <div class="lo"><img class="gr" src="./pics/tar.png"/> </div>
+    </div>
+    </div>
+        <ul>
+                <li><a class="crazy"  href="index.html">HOME</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="rate.html">RATES</a></li>
+                <li class="lin"><a href="">Fx Analysis</a></li>
+                <li><a href="#">Wallet</a></li>
+                <li> <a href="#">Profile</a></li>
+                <li class="lint"> <a href="#">Settings</a></li>
+                <li class="circle"> <a href="#">Terms & conditions</a></li>
+                <li> <a href="#">FAQs</a></li>
+                <li> <a href="#">Logout</a></li>
+        </ul>
+        <label id="icon">
+            <i class="material-icons" style="font-size:36px">menu</i>
+        </label>
+    </nav>
+    <!--end of nav-->
+    <section class="loned">
+        <h1>Best Rates</h1>
+        <div class="leo" >
+            <div class="baba">
+               <div class="toe"> <p>Bitcoin</p>
+                <p><span style="color:#CE9920;"> $60k</span>/1BTC</p></div>
+              <i class="lit"> <i class="fa fa-btc"></i></i>
+            </div>
+            <div class="baba">
+                <div class="toe"> <p>Ethereum</p>
+                    <p><span style="color:#CE9920;"> $20k</span>/1ETH</p></div>
+                  <i class="lit"> <i class="fa-brands fa-ethereum"></i></i>
+            </div>
+            <div class="baba">
+                <div class="toe"> <p>Ripple</p>
+                    <p><span style="color:#CE9920;"> $10</span>/1XRP</p></div>
+                  <i class="lit"> <img class="lt" src="./b-svg/Union 1.svg"/></i>
+            </div>
+            <div class="baba">
+                <div class="toe"> <p>Litecoin</p>
+                    <p><span style="color:#CE9920;"> $120</span>/1LTC</p></div>
+                  <i class="lit"> <i class="fa-solid fa-litecoin-sign"></i></i>
+            </div>
+        </div>
+        <!--end of loned-->
+        <div class="last">
+            <div class="h">
+                <p>Rate History</p><div class="ope"></div>
+            <div class="kone"></div>
+            </div>
+            <div class="lips">
+              <div class="loot">Transaction history</div> <div class="lope"> </div>
+              <div class="loot">
+                <button type="now"> All</button> 
+                <button type="now"> Buy</button> 
+                <button type="now"> Sell</button> 
+              </div>
+                <div class="loot">Purchased 0.005BTC</div> <div class="lope"> </div>
+                <div class="loot">Sold 0.08ETH</div> <div class="lope"> </div>
+                <div class="loot">Sold 20.53 XRP</div> <div class="lope"> </div>
+                <div class="loot">Purchased 100 LTC</div> <div class="lope"> </div>
+                <div class="loot">Purchased 250 XRP</div> <div class="lope"> </div>
+                <div class="loot">SOLD 80 LTC</div> <div class="lope"> </div>
+              <!--ttttt-->
+            </div>
+        </div>
+    </section>
+    <script>
+
+        $(document).ready(function(){
+    $('#icon').click(function (){
+        $('ul').toggleClass('show');
+    });
+});
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+    </script>
+</body>
+</html>

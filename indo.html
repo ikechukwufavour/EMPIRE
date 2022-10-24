@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+    .header {
+      height: 70px;
+      flex:1;
+      background-color: #aaa;
+    }
+    .main {
+      flex:1;
+      display: flex;
+      max-height:100px;
+      background-color: yellow;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin:10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .child-right {
+      flex:1;
+      background: blue;
+      height:100px;
+     max-width:100px;
+     margin: 10px;
+     margin-top: 120px;
+    }
+    .child-left {
+      flex:1;
+      background: red;
+      height:100px;
+      max-width:100px;
+    }
+    
+    @media(max-width:600px){
+        .main{
+            flex-direction: column;
+        }
+        .child-left{
+          max-width:200px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">h</div>
+        <div class="main">
+          <div class="child-left">h</div>
+          <div class="child-right">  <div class="vl"></div> ijibhhuhij[oi0o]-mhbt9v8</div>
+        </div>
+      </div>
+
+<div>
+<h1>My First Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</div>
+
+</body>
+<style>
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    padding-top: 20px; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  .pas{
+    position:fixed;
+    background-color: #00002E;
+    height:80px;
+    width:100%;
+    margin-bottom: 30px;
+    position: fixed;
+    border:3px solid red;
+   
+}
+ .ki{
+    float:right;
+    margin-right: 40px;
+    border:2px solid green;
+}
+.lo{
+    display:inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    color:snow;
+    border: 2px solid yellowgreen
+}
+.gr{
+    width:30px;
+    height: 40px;
+}
+</style>
+            
+</html>
